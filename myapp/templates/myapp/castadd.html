@@ -1,0 +1,13 @@
+<form method="post" action="/myapp/cast/add">
+    {% csrf_token %}
+    <label>Name</label>
+    <div>{{ form.name }}</div>
+    <label>Age</label>
+    <div>{{ form.age }}</div>
+    <label>Movies</label>
+    <div>{{ form.movies }}</div>
+    <button type="submit">Add cast</button>
+</form>
+{% if msg %}
+<h1>{{ msg }}</h1>
+{% endif %}

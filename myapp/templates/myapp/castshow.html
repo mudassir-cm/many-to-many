@@ -1,0 +1,17 @@
+{% if list %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    {% for c in list %}
+    <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.age }}</td>
+        <td>{{ c.movies.name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<h1>ther is no cast</h1>
+{% endif %}

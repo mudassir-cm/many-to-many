@@ -1,0 +1,16 @@
+{% if list %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Date or release</th>
+    </tr>
+    {% for c in list %}
+    <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.dor }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<h1>ther is no cast</h1>
+{% endif %}
