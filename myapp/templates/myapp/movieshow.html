@@ -4,10 +4,16 @@
         <th>Name</th>
         <th>Date or release</th>
     </tr>
-    {% for c in list %}
+    {% for m in list %}
     <tr>
-        <td>{{ c.name }}</td>
-        <td>{{ c.dor }}</td>
+        <td>{{ m.name }}</td>
+        <td>{{ m.dor }}</td>
+        <td>
+            <a href="/myapp/movie/edit/{{ m.id }}">Edit</a>
+        </td>
+        <td>
+            <a href="/myapp/movie/delete/{{ m.id }}">Delete</a>
+        </td>
     </tr>
     {% endfor %}
 </table>

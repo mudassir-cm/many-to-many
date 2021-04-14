@@ -1,0 +1,14 @@
+<form method="post" action="/myapp/movie/update/{{ movie.id }}">
+    {% csrf_token %}
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" value="{{ movie.name }}">
+    </div>
+    <div>
+        <label>Date of Release</label>
+        <input name="dor" type="date" value="{{ movie.dor }}">
+    </div>
+    <div>
+        <input type="submit" value="Update">
+    </div>
+</form>

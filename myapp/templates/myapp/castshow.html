@@ -9,6 +9,12 @@
         <td>{{ c.name }}</td>
         <td>{{ c.age }}</td>
         <td>{{ c.movies.name }}</td>
+        <td>
+            <a href="/myapp/cast/edit/{{ c.id }}">Edit</a>
+        </td>
+        <td>
+            <a href="/myapp/cast/delete/{{ c.id }}">Delete</a>
+        </td>
     </tr>
     {% endfor %}
 </table>
