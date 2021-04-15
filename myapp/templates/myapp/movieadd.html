@@ -2,11 +2,10 @@
     {% csrf_token %}
     <label>Name</label>
     <div>{{ form.name }}</div>
-    <label>Name</label>
+    <label>date of release</label>
     <div>{{ form.dor }}</div>
-    <label>Name</label>
-    <div>{{ form.actors }}</div>
-    <label>Name</label>
+    <div>{{ cast.name }}</div>
+    <p>aaaaa</p>
     <button type="submit">Add</button>
 </form>
 {% if msg %}
